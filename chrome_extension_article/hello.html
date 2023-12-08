@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Headline Rhyme Extension</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="popup.js"></script>
+</head>
+
+<body>
+  <div class="popup-container">
+    <div id="articleContainer">
+      <h1>Article Link</h1>
+      <p id="url">Fetching URL...</p>
+      <button id="getData" class="button">GET ARTICLE DATA</button>
+    </div>
+    <div id="emailInputContainer">
+      <h1 style="text-align: center;">Email Verification</h1>
+      <label for="email">Enter your email:</label>
+      <div class="input-container">
+        <input type="email" id="email" required>
+        <button id="validateEmail" class="button">Submit</button>
+      </div>
+    </div>
+    
+    <div id="otpInputContainer" style="display: none;">
+      <h1 style="text-align: center;">Email Verification</h1>
+      <label for="otp">Enter OTP:</label>
+      <div class="input-container">
+        <input type="text" id="otp" required>
+        <button id="verifyOTP" class="button">Verify OTP</button>
+      </div>
+    </div>
+    <div class="result-container">
+      <h2 id="placeholder-headline">Rhyming Headline</h2>
+      <div id="headline" class="article-info"></div>
+      <h2 id="placeholder-bias">Article Bias Summary</h2>
+      <div id="bias" class="article-info"></div>
+    </div>
+    <div class="loader-container">
+      <div id="loader"></div>
+    </div>
+  </div>
+</body>
+
+</html>
